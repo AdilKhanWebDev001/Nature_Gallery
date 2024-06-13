@@ -93,7 +93,7 @@ grid-column: span 2;
     cursor: pointer;
 }
 #box2{
-    background-image: url(\ Trees_landscape.jpg);
+    background-image: url(Trees.jpg);
     background-position: top center;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.716);
@@ -148,7 +148,7 @@ grid-column: span 2;
     transition: all 1s ease-in-out;
 }
 #box2:hover{
-    background-image: url(\ Trees_landscape.jpg);
+    background-image: url(Trees.jpg);
     background-position: center center;
     background-size: cover;
     background-color: rgba(159, 155, 155, 0.274);
