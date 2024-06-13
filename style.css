@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Urbanist", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to left, #0c93e8, #d77608);
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.312);
+    height: 3rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3rem;
+}
+
+nav li {
+    list-style: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+section{
+    /* margin-top: 160px; */
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+    margin-top: 80px;
+}
+section h1{
+    font-weight: 600px;
+    font-size: 44px;
+}
+section p{
+    font-weight: 400px;
+    font-size: 24px;
+}
+section h3{
+    font-weight: 400px;
+    font-size: 24px;
+    text-align: right;
+}
+.text{
+    flex-basis: 30%;
+}
+.gallery{
+    align-self: center;
+    height: 90%;
+    display: grid;
+    justify-content: center;
+    align-items: stretch;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6px;
+    flex-basis: 50%;
+    grid-auto-rows: 130px;
+
+}
+.box{
+    background-color: rgba(0, 0, 0, 0.132);
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(101, 217, 101);
+  }
+ .row-2{
+grid-row: span 2;
+}
+ .col-2{
+grid-column: span 2;
+}
+#box1{
+    background-image: url(waterfalls_potrait.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.817);
+    background-blend-mode: hard-light;
+    cursor: pointer;
+}
+#box2{
+    background-image: url(\ Trees_landscape.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.716);
+    background-blend-mode: hard-light;
+    cursor: pointer;
+}
+#box3{
+    background-image: url(ocean_landscape.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-blend-mode: hard-light;
+    cursor: pointer;
+}
+#box4{
+    background-image: url(Mountain_potrait.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.637);
+    background-blend-mode: hard-light;
+    cursor: pointer;
+}
+#box5{
+    background-image: url(Rain\ Landscape.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.743);
+    background-blend-mode: hard-light;
+    cursor: pointer;
+}
+#box6{
+    background-image: url(Hills_landscape.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.752);
+    background-blend-mode: hard-light;
+    cursor: pointer;
+}
+#box7{
+    background-image: url(Beach_landscape.jpg);
+    background-position: center left;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.647);
+    background-blend-mode: hard-light;
+    cursor: pointer;
+}
+#box1:hover{
+    background-image: url(waterfalls_potrait.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-color: rgba(159, 155, 155, 0.274);
+    background-blend-mode: hard-light;
+    transition: all 1s ease-in-out;
+}
+#box2:hover{
+    background-image: url(\ Trees_landscape.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-color: rgba(159, 155, 155, 0.274);
+    background-blend-mode: hard-light;
+    transition: all 1s ease-in-out;
+}
+#box3:hover{
+    background-image: url(ocean_landscape.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-color: rgba(159, 155, 155, 0.274);
+    background-blend-mode: hard-light;
+    transition: all 1s ease-in-out;
+}
+#box4:hover{
+    background-image: url(Mountain_potrait.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-color: rgba(159, 155, 155, 0.274);
+    background-blend-mode: hard-light;
+    transition: all 1s ease-in-out;
+}
+#box5:hover{
+    background-image: url(Rain\ Landscape.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-color: rgba(159, 155, 155, 0.274);
+    background-blend-mode: hard-light;
+    transition: all 1s ease-in-out;
+}
+#box6:hover{
+    background-image: url(Hills_landscape.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-color: rgba(159, 155, 155, 0.274);
+    background-blend-mode: hard-light;
+    transition: all 1s ease-in-out;
+}
+#box7:hover{
+    background-image: url(Beach_landscape.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-color: rgba(159, 155, 155, 0.274);
+    background-blend-mode: hard-light;
+    transition: all 1s ease-in-out;
+}
+/* Media queries for width <= 1024px */
+@media screen and (max-width:1024px) {
+    section{
+        flex-direction: column;
+        padding-block: 20px;
+
+    }
+    .gallery{
+        width: 100%;
+        grid-auto-rows: 200px;
+    }
+    .box{
+        grid-row: span 1;
+        grid-column: span 3;
+        
+     
+    }
+    body{
+        background-color: #0c93e8;
+        /* background: linear-gradient(to left, #d77608, #f39304); */
+        /* background-repeat: no-repeat; */
+        background-size: 100%;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+    }
+
+}
+@media screen and (max-width:450px){
+    nav{
+        visibility: hidden;
+    }
+}
+@media screen and (max-width:320px){
+    .text{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .gallery{
+        flex-basis: 100%;
+    }
+}
